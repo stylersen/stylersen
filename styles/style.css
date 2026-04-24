@@ -1,0 +1,285 @@
+/*up/down: #2890FF, left/right: #FF3352, forward/backward: #8BDC00*/
+
+/* fonts: 
+nav - 
+font-family: peridot-pe-variable, sans-serif;
+    font-style: normal;
+    font-variation-settings: "ital" 0, "wdth" 120, "wght" 950;
+    
+basic text - 
+font-family: "itc-avant-garde-gothic-pro", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: "itc-avant-garde-gothic-pro", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: "itc-avant-garde-gothic-pro", sans-serif;
+font-weight: 700;
+font-style: normal;*/
+
+body {
+    background-image: url("../images/Background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    background-color: #111213 !important;
+    opacity: 0.95 !important;
+}
+
+.navbar-nav>li {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.nav-link {
+    color: #f6405f !important;
+    font-family: peridot-pe-variable, sans-serif;
+    font-style: normal;
+    font-variation-settings: "ital" 0, "wdth" 120, "wght" 950;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color: white !important;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.212);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.signature {
+    width: 95px;
+    height: 35px;
+}
+
+/* .custom-toggler .navbar-toggler-icon {
+    background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 32 32′ xmlns=’http://www.w3.org/2000/svg’%3E%3Cpath stroke=’rgba(0, 128, 0, 0.8)’ stroke-width=’2′ stroke-linecap=’round’ stroke-miterlimit=’10’ d=’M4 8h24M4 16h24M4 24h24’/%3E%3C/svg%3E”);
+} */
+
+.who-am-i {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-size: clamp(30px, 3.5vw, 200px);
+    text-align: right;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main-picture {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 75%;
+    object-fit: contain;
+}
+
+.about-me-heading {
+    font-size: 7vw;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.all-about-me {
+    font-size: clamp(20px, 1.45vw, 200px);
+    text-align: left;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+
+.about-me-pic {
+    margin-bottom: 0px;
+    height: 75%;
+    float: right;
+    object-fit: contain;
+}
+
+.artifact-area {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.artifact-heading {
+    font-size: clamp(30px, 5vw, 110px);
+    font-family: loos-extended, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.artifact-contribution {
+    font-size: 16px;
+    text-align: center;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(155, 155, 155);
+}
+
+.image-gallery {
+    margin-bottom: 30px;
+}
+
+.firstimage {
+    margin-left: 9vw;
+}
+
+/* .artifactimage {
+    
+} */
+
+.lastimage {
+    margin-right: 9vw;
+}
+
+div.scroll-container {
+    background-color: #383838;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 60vw;
+    height: auto;
+    -webkit-mask-image: linear-gradient(to right, transparent, black, black, black, black, black, transparent);
+    mask-image: linear-gradient (to right, transparent, black, transparent);
+    margin: auto;
+    scroll-snap-type: x mandatory;
+}
+
+@media (max-width: 767px) {
+    div.scroll-container {
+        width: 100vw;
+    }
+
+    .firstimage {
+        margin-left: 20vw;
+    }
+}
+
+div.scroll-container img {
+    padding: 10px;
+    height: clamp(200px, 23vw, 500px);
+    width: auto;
+    scroll-snap-align: center;
+}
+
+.artifact-description {
+    font-size: clamp(15px, 1.05vw, 30px);
+    text-align: left;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.PDIIADbreakdown {
+    text-decoration: none;
+    color: #f6405f;
+}
+
+.PDIIADbreakdown:hover {
+    color: white;
+}
+
+footer {
+    background-color: #111213 !important;
+    opacity: 0.95 !important;
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact {
+    padding-left: clamp(20px, 1vw, 300px);
+    padding-right: clamp(20px, 1vw, 300px);
+    color: rgb(107, 107, 107);
+}
+
+.contact:hover {
+    color: white;
+}
+
+.bi-youtube {
+    font-size: 17px;
+}
+
+.bi-envelope-fill {
+    font-size: 15px;
+}
+
+.bi-linkedin {
+    font-size: 14px;
+}
+
+.bi-file-earmark-person-fill {
+    font-size: 14px;
+}
+
+/* Scrollbar stuff */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Arrows */
+/* ::-webkit-scrollbar-button {
+    background: #2890FF;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2890FF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #FF3352;
+    /* Green thumb for horizontal scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover:horizontal {
+    background: white;
+}
